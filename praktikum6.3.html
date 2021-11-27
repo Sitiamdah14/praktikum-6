@@ -9,6 +9,7 @@
         *{
             box-sizing: border-box;
         }
+        
         body{
             display: flex;
             min-height: 100vh;
@@ -17,20 +18,23 @@
             background: bisque;
             padding: 0.5em;
             }
+        
         #main{
             display: flex;
             flex: 1;
         }
+        
         #main > article,
         #main > aside{
             flex: 0 0 20vw;
         }
+        
         #main > aside{
             background: lightgreen;
             text-align: center;
             padding: 11em 0em 0em;
-            
         }
+        
         #main >article{
             flex: 1;
             order: 1;
@@ -43,23 +47,18 @@
             height: 200px;
             width: 300px;
             padding: 1em;
-       
-
         }
    
         header, footer{
             background: lightseagreen;
             height: 10vh;
-          
         }
+        
         header, footer, article, aside{
             padding: 1em;
             margin: 0.5em;
             text-align: center;
-          
-        }
-
-       
+        }    
     </style>
 </head>
 <body>
