@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            background: bisque;
+            padding: 0.5em;
+            }
+        #main{
+            display: flex;
+            flex: 1;
+        }
+        #main > article,
+        #main > aside{
+            flex: 0 0 20vw;
+        }
+        #main > aside{
+            background: lightgreen;
+            text-align: center;
+            padding: 11em 0em 0em;
+            
+        }
+        #main >article{
+            flex: 1;
+            order: 1;
+            background: orangered;
+            text-align:center;
+            padding: 10em 0em 0em;
+        }
+
+        img{
+            height: 200px;
+            width: 300px;
+            padding: 1em;
+       
+
+        }
+   
+        header, footer{
+            background: lightseagreen;
+            height: 10vh;
+          
+        }
+        header, footer, article, aside{
+            padding: 1em;
+            margin: 0.5em;
+            text-align: center;
+          
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div id="main">
+        <article>
+            <p>Article</p>
+            <img src="img/img2.jpeg" alt="foto">
+            <img src="img/img3.jpeg" alt="foto">
+            <img src="img/img4.jpeg" alt="foto">
+        </article>
+        <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
